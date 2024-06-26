@@ -19,6 +19,19 @@
 
         cursor: pointer;
 
+        @include respond(tab-port) {
+             top: 4rem;
+             right: 4rem;
+        }
+
+
+        
+        @include respond(phone) {
+            top: 3rem;
+            right: 3rem;
+       }
+
+
 
 
     }
@@ -33,6 +46,16 @@
         background-image: radial-gradient($color-primary-light,$color-primary-dark);
         z-index: 1000;
         transition: transform .8s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+
+        @include respond(tab-port) {
+            top: 4.5rem;
+            right: 4.5rem;
+       }
+
+       @include respond(phone) {
+        top: 3.5rem;
+        right: 3.5rem;
+   }
 
 
         // transform: scale(80);
